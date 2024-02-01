@@ -15,6 +15,10 @@ export const getBrandName = () => {
     const { brandName } =  JSON.parse(localStorage.getItem('user') || '{}');
     return brandName || '';
 };
+export const getName = () => {
+    const { name } =  JSON.parse(localStorage.getItem('user') || '{}');
+    return name || '';
+};
 
 export const setToken = (userDetails) => {
     localStorage.setItem('user', JSON.stringify(userDetails));   
